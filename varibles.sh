@@ -1,6 +1,4 @@
-#bin/bash 
-hi please check varibles in shell script 
+#!/bib/bash
 
-its kind of defination to all the data persons 
-
-plese check have a look varibles 
+echo"Ramesh:: Hello suresh how are you"
+echo"Suresh:: iam fine howare you"
