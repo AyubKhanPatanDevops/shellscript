@@ -8,3 +8,9 @@ MOVIES=("RRR"DJ "DILLU" "VEERAMALLU")
 # list always starts with 0.
 
 echo "first movie is: ${MOVIES[0]}" 
+echo "first movie is: ${MOVIES[1]}" 
+echo "first movie is: ${MOVIES[2]}"
+echo "first movie is: ${MOVIES[@]}" 
+
+
+
