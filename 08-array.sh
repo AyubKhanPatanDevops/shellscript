@@ -7,6 +7,6 @@ HOUSENAMES=("AYUB" "AKBAR" "AMEERKHAN")
 # list always start with 0.
 
 echo "first name  is: ${AYUB[0]}" 
-echo "secon name  is: ${AKBAR[1]}" 
-echo "first name  is: ${AMEERKHKAN[2]}"
-echo "first name  is: ${[@]}" 
+echo "second name  is: ${AKBAR[1]}" 
+echo "third name  is: ${AMEERKHKAN[2]}"
+echo "first name  is: ${[NAMES@]}" 
