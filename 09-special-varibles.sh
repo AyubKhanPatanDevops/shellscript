@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "All varibles: $@"S
+echo "All varibles: $@"
