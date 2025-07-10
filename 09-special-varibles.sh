@@ -8,3 +8,5 @@ echo "home directory of current user: $HOME"
 echo "which user is runnig this script: $USER"
 echo "host name :$HOSTNAME"
 echo "process id of the current shellscript: $$"
+echo "process id of last background command: $!"
+echo "lis of files commnd: $!
