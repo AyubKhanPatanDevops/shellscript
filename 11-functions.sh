@@ -1,6 +1,7 @@
 #!/bin/bash
 
 USERID=$(id -u)
+TIMESTAMP=$(date )
 
 VALIDATE(){
     echo "Exit status: $1"
@@ -17,7 +18,7 @@ else
 fi
 
 dnf install mysql -y
-VALIDATE $? "Installing Msyql"
+VALIDATE $? "Installing Mysql"
 
 dnf install git -y 
 VALIDATE $? "Installing git"
