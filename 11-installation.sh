@@ -22,15 +22,20 @@ else
 
  fi
 
- dnf install git -y
+ dnf install Git -y
 
  if [ $? -ne 0 ]
 
  then 
-     echo "installation of git ...FAILURE"
+     echo "installation of Git ...FAILURE"
      exit 1 
 
- else       
+ else
+     echo "installation of Git...SUCESS"
+
+  fi
+
+  echo "is script proceeding?"         
 
 
 
