@@ -11,13 +11,15 @@ N="\e[0m"
 echo "script started executing at:$TIMESTAMP"
 
 VALIDATE(){
-    if [ $1 -ne 0 ]
+    if [ $! -ne 0 ]
     then
 
         echo -e "$2...$R FAILURE $N"
          exit 1
     else 
          echo -e "$2...$G SUCESS $N"
+
+    fi     
 }
 
 if [ $USERID -ne 0 ]
