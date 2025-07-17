@@ -14,6 +14,6 @@ for i in $@
 do
    
    echo "package to install: $i"
-   dnf list installed
+   dnf list installed $i
 
 done   
