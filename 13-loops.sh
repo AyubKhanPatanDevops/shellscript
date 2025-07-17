@@ -5,4 +5,4 @@ do
 
   echo $i
 
-do
+done
