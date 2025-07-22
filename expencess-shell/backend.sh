@@ -46,6 +46,12 @@ then
 else
     echo -e "Expense user already created..$Y SKIPPING $N"
 
-fi    
+fi   
 
+mkdir -p /app
+VALIDATE $? "creating app directory"
+
+curl -o /tmp/backend.zip https://expense-builds.s3.us-east-1.amazonaws.com/expense-backend-v2.zip
+unzip /tmp/backend.zip
+VALIDATE $? "installing nodejs dependencies"
 
