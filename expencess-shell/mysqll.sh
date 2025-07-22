@@ -38,5 +38,14 @@ VALIDATE $? "Enabling MySQL Server"
 systemctl start mysqld &>>$LOGFILE
 VALIDATE $? "Enabling MySQL Server"
 
-mysql_secure_installation --set-root-pass ExpenseApp@1
-VALIDATE $? "setting up root password"
+#mysql_secure_installation --set-root-pass ExpenseApp@1
+#VALIDATE $? "setting up root password"
+
+# Below code wil  be useful for idempotent nature
+mysql -h db.databaseai.online -uroot -pEcpenseApp@1 -e 'Show databases;' &>>$LOGFILE
+if [ $? -ne 0 ]
+then
+    mysql_secure_installation --set-root-pass ExpenseApp@1 &>>$LOGFILE
+    VALIDATE $? "MySQL root password setup"
+else
+    echo -e "MySQL root password is already settup...$Y SKIPPING  $N"    
