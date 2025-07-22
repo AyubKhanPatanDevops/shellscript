@@ -46,6 +46,6 @@ then
 else
     echo -e "Expense user already created..$Y SKIPPING $N"
 
-    
+fi    
 
 
